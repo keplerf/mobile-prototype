@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-21228 -20979.5 26 30">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #090a0a;
+      }
+
+      .cls-2 {
+        stroke: #020202;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_8316" data-name="Group 8316" transform="translate(-21445 -21149.5)">
+    <line id="Line_1667" data-name="Line 1667" class="cls-1" y2="30" transform="translate(240 170)"/>
+    <line id="Line_1668" data-name="Line 1668" class="cls-1" y2="30" transform="translate(230 170)"/>
+    <line id="Line_1669" data-name="Line 1669" class="cls-1" y2="30" transform="translate(220 170)"/>
+    <g id="Ellipse_308" data-name="Ellipse 308" class="cls-2" transform="translate(237 177)">
+      <circle class="cls-3" cx="3" cy="3" r="3"/>
+      <circle class="cls-4" cx="3" cy="3" r="2.5"/>
+    </g>
+    <g id="Ellipse_309" data-name="Ellipse 309" class="cls-2" transform="translate(227 184)">
+      <circle class="cls-3" cx="3" cy="3" r="3"/>
+      <circle class="cls-4" cx="3" cy="3" r="2.5"/>
+    </g>
+    <g id="Ellipse_310" data-name="Ellipse 310" class="cls-2" transform="translate(217 180)">
+      <circle class="cls-3" cx="3" cy="3" r="3"/>
+      <circle class="cls-4" cx="3" cy="3" r="2.5"/>
+    </g>
+  </g>
+</svg>
