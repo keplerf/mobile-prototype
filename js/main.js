@@ -26,6 +26,11 @@ $('.mainNav a').on('click',function(evt){
   $('.dropdownMenu').toggleClass('show');
 });
 
+$('.shopbymenu .mainmenu a').on('click',function(evt){
+  $(this).toggleClass('active');
+  $('.shopbypanel').slideDown('fast');
+});
+
 
 
 

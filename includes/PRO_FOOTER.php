@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="display:none">
   <div class="row">
     <div class="footer text-center">
       <h4>Find a store</h4>

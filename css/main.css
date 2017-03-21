@@ -57,7 +57,7 @@ p {
   width: 100%;
   display: none;
   transition: all;
-  animation: slide 1s;
+  animation: slide .5s;
   animation-fill-mode: forwards; }
   #desktop-nav .dropdownMenu.show {
     display: block;
@@ -100,15 +100,24 @@ p {
         .shopbymenu .mainmenu li a.active {
           color: black;
           font-weight: bold; }
+        .shopbymenu .mainmenu li a:hover, .shopbymenu .mainmenu li a:focus {
+          text-decoration: none; }
   .shopbymenu .shopbypanel {
     border-top: solid 4px;
-    padding: 20px 0; }
+    padding: 20px 0;
+    display: none; }
     .shopbymenu .shopbypanel h4 {
       margin-bottom: 20px; }
+
+.product-list {
+  opacity: 0.2; }
 
 .breadcrumbs {
   overflow: hidden;
   padding: 15px 0; }
+  .breadcrumbs span {
+    display: inline-block;
+    padding: 0 16px; }
   .breadcrumbs ul li {
     list-style: none;
     display: inline-block; }

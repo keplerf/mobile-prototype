@@ -167,7 +167,7 @@
        </div>
     </nav>
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
       <div class="mp-pusher" id="mp-pusher">
         <div data-role="panel" id="mypanel">
