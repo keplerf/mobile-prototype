@@ -27,7 +27,9 @@ p{
   }
   .mainNav{
     background: black;
-    overflow: hidden;
+    z-index: 12000;
+    position: relative;
+    // overflow: hidden;
     .logo{
       margin: 18px 0;
       height: 44px;
@@ -48,8 +50,86 @@ p{
         font-size: 18px;
         text-transform: uppercase;
         font-weight: bold;
+        &:hover, &:focus{
+          text-decoration: none;
+        }
+        &.selected{
+          position: relative;
+          &::after{
+            content: "";
+            display: block;
+            height: 7px;
+            background: #00aeef;
+            position: relative;
+            margin-top: 23px;
+            margin-bottom: -30px;
+          }
+          .bar{
+
+          }
+
+
+
+        }
       }
     }
+  }
+
+  .panel{
+    background: #ededed;
+  }
+
+  .dropdownMenu{
+    background: #ededed;
+    position: absolute;
+    top: 117px;
+    z-index: 1;
+    width: 100%;
+    // -webkit-box-shadow: 0px 15px 15px -16px rgba(0,0,0,0.75);
+    // -moz-box-shadow: 0px 15px 15px -16px rgba(0,0,0,0.75);
+    // box-shadow: 0px 15px 15px -16px rgba(0,0,0,0.75);
+
+    @keyframes slide {
+        from {background-color: red;}
+        to {background-color: yellow;}
+    }
+
+    .menu-panel{
+      margin: 30px 0;
+      overflow: hidden;
+      display: none;
+
+      transition: all;
+
+      &.show{
+        display: block;
+      }
+    }
+
+    .border-right{
+      border-right: solid 1px grey;
+    }
+    .col-sm-2 {
+      min-height: 165px;
+    }
+
+    h3{
+      font-size: 18px;
+      font-weight: bold;
+      margin: 5px 0 0 0 ;
+    }
+    ul{
+      font-size: 15px;
+      li{
+        list-style: none;
+        a{
+          padding: 8px 0 ;
+          display: block;
+        }
+
+      }
+    }
+
   }
 
 

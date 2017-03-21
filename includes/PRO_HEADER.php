@@ -88,7 +88,7 @@
         </div>
         <div class="col-md-7 text-center">
           <ul>
-            <li><a href="i#">Store</a></li>
+            <li><a href="i#" data-menu= '1'>Store</a></li>
             <li><a href="i#">Reviews</a></li>
             <li><a href="i#">Health</a></li>
             <li><a href="i#">Why Sole</a></li>
@@ -98,6 +98,48 @@
         <div class="col-md-2 text-right ">
           <div class="search">
             <img class="icon-new" src="images/icons/search-white-icon.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdownMenu">
+      <div class="container">
+        <div class="menu1 menu-panel">
+          <div class="col-sm-1">
+          </div>
+          <div class="col-sm-2 border-right">
+            <ul>
+              <li><h3><a href="#">FEATURED</a></h3></li>
+              <li><h3><a href="#">SHOP ALL</a></h3></li>
+              <li><h3><a href="#">GIFT CARD</a></h3></li>
+              <li><h3><a href="#">SALE</a></h3></li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <ul>
+              <li><h3><a href="#">FOOTBEDS</a></h3></li>
+              <li><a href="#">Shop all</a></li>
+              <li><a href="#">Shop by</a></li>
+              <li><a href="#">Personal shopper</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <ul>
+              <li><h3><a href="#">FOOTWEAR</a></h3></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Shop by</a></li>
+              <li><a href="#">Shop all</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2 border-right">
+            <ul>
+              <li><h3><a href="#">SOCKS</a></h3></li>
+              <li><a href="#">Shop by</a></li>
+              <li><a href="#">Shop all</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 text-center">
+            <h3><img src="http://placehold.it/150x150"></h3>
           </div>
         </div>
       </div>

@@ -19,6 +19,12 @@ $( document ).ready(function() {
 // console.log(height);
 
 
+// Desktop Main nav
+$('.mainNav a').on('click',function(evt){
+  evt.preventDefault(evt);
+  $(this).toggleClass('selected');
+  $('.menu1').toggleClass('show');
+});
 
 
 
@@ -43,7 +49,7 @@ $( document ).ready(function() {
 
   // Back button hide t
   $('.mp-back').on('click' , function(evt){
-    $(this).parent().removeClass('active');
+    $(this).parent().toggleClass('active');
 
   })
 
