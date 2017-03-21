@@ -18,7 +18,7 @@
 
   </head>
   <body>
-    <div class='page-wrapper' data-role="page" style="margin-top:50px;">
+    <div class='page-wrapper' data-role="page">
 
     <!-- filter-products -->
     <div class="filter-products fix-bottom hidden">
@@ -59,13 +59,53 @@
         <div class="col-xs-6">
           <a href="#" class="btn-block text-center">
             <img class="icon-new" src="images/icons/fillter-icon-black.svg" alt="">Filter</a>
+
         </div>
       </div>
     </div>
 
-<!-- navigation  -->
+<!-- navigation desktop -->
 
-    <nav class="navbar navbar-inverse navbar-fixed-top " style="margin-bottom:50px;">
+  <div id="desktop-nav">
+    <div class="top-bar">
+      <div class="container-fluid">
+        <div class="col-md-6">
+          Free shipping over $99 Learn more
+        </div>
+        <div class="col-md-6 text-right topNav">
+          <a href="#">My account </a>
+          <a href="#">Help</a>
+          <a href="#"> <img class="icon-new" src="images/icons/cart-icon.svg" alt=""> </a>
+          <a href="#">En ></a>
+          <a href="#"> <img class="icon-new" src="images/icons/canada-icon.svg" alt=""> </a>
+        </div>
+      </div>
+    </div>
+    <div class="mainNav">
+      <div class="container-fluid">
+        <div class="col-md-3">
+           <a href="index.php"><img src="images/sole-white.svg" class="logo" alt="" /></a>
+        </div>
+        <div class="col-md-7 text-center">
+          <ul>
+            <li><a href="i#">Store</a></li>
+            <li><a href="i#">Reviews</a></li>
+            <li><a href="i#">Health</a></li>
+            <li><a href="i#">Why Sole</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 text-right ">
+          <div class="search">
+            <img class="icon-new" src="images/icons/search-white-icon.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- navigation  -->
+    <nav class="navbar navbar-inverse navbar-fixed-top hidden-md hidden-lg hidden-xl" style="margin-bottom:50px;">
       <div class="container ">
         <div class="navbar-header">
 
@@ -84,9 +124,6 @@
 
        </div>
     </nav>
-
-
-
 
     <div class="container">
       <div class="row">

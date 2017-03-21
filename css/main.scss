@@ -18,6 +18,43 @@ p{
   }
 }
 
+// NEW DESKTOP MOBILE
+#desktop-nav{
+  .top-bar{
+    padding: 10px 0;
+    overflow: hidden;
+    background: #b7b7b7;
+  }
+  .mainNav{
+    background: black;
+    overflow: hidden;
+    .logo{
+      margin: 18px 0;
+      height: 44px;
+    }
+    .search{
+      margin: 29px 0;
+    }
+    ul{
+      padding-top: 18px;
+      li{
+        list-style: none;
+        display: inline-block;
+      }
+      a{
+        color: white;
+        display: inline-block;
+        padding: 10px 17px;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+
+
+}
+
 .carousel{
   background: #acaea9;
 }
@@ -453,12 +490,19 @@ body , html{
 }
 
 @media (min-width:768px) {
+  body, html{
+    max-width: inherit;
+  }
   #mypanel{
       transform: translate3d(-1800px, 0, 0);
       transition: transform 0.35s;
       position: absolute;
+
   }
 
+.page-wrapper{
+    max-width: inherit;
+}
   .mp-level {
 
     transform: translate3d(-1800px, 0, 0);
