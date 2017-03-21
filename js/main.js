@@ -23,7 +23,7 @@ $( document ).ready(function() {
 $('.mainNav a').on('click',function(evt){
   evt.preventDefault(evt);
   $(this).toggleClass('selected');
-  $('.menu1').toggleClass('show');
+  $('.dropdownMenu').toggleClass('show');
 });
 
 

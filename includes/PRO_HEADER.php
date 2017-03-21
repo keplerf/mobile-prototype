@@ -119,7 +119,7 @@
             <ul>
               <li><h3><a href="#">FOOTBEDS</a></h3></li>
               <li><a href="#">Shop all</a></li>
-              <li><a href="#">Shop by</a></li>
+              <li><a href="shopby.php">Shop by</a></li>
               <li><a href="#">Personal shopper</a></li>
             </ul>
           </div>
@@ -127,7 +127,7 @@
             <ul>
               <li><h3><a href="#">FOOTWEAR</a></h3></li>
               <li><a href="#">Men</a></li>
-              <li><a href="#">Shop by</a></li>
+              <li><a href="shopby.php">Shop by</a></li>
               <li><a href="#">Shop all</a></li>
             </ul>
           </div>

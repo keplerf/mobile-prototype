@@ -8,7 +8,9 @@ p {
 #desktop-nav .top-bar {
   padding: 10px 0;
   overflow: hidden;
-  background: #b7b7b7; }
+  background: #b7b7b7;
+  z-index: 30000;
+  position: relative; }
 #desktop-nav .mainNav {
   background: black;
   z-index: 12000;
@@ -42,28 +44,27 @@ p {
           position: relative;
           margin-top: 23px;
           margin-bottom: -30px; }
-#desktop-nav .panel {
-  background: #ededed; }
+@keyframes slide {
+  from {
+    top: 0px; }
+  to {
+    top: 117px; } }
 #desktop-nav .dropdownMenu {
   background: #ededed;
   position: absolute;
   top: 117px;
   z-index: 1;
-  width: 100%; }
-@keyframes slide {
-  from {
-    background-color: red; }
-  to {
-    background-color: yellow; } }
+  width: 100%;
+  display: none;
+  transition: all;
+  animation: slide 1s;
+  animation-fill-mode: forwards; }
+  #desktop-nav .dropdownMenu.show {
+    display: block;
+    top: 0px; }
   #desktop-nav .dropdownMenu .menu-panel {
     margin: 30px 0;
-    overflow: hidden;
-    display: none;
-    transition: all; }
-    #desktop-nav .dropdownMenu .menu-panel.show {
-      display: block; }
-  #desktop-nav .dropdownMenu .border-right {
-    border-right: solid 1px grey; }
+    overflow: hidden; }
   #desktop-nav .dropdownMenu .col-sm-2 {
     min-height: 165px; }
   #desktop-nav .dropdownMenu h3 {
@@ -77,6 +78,43 @@ p {
       #desktop-nav .dropdownMenu ul li a {
         padding: 8px 0;
         display: block; }
+
+.panel {
+  background: #ededed;
+  overflow: hidden; }
+
+.border-right {
+  border-right: solid 1px grey; }
+
+.shopbymenu {
+  padding: 10px; }
+  .shopbymenu .mainmenu {
+    list-style: none;
+    padding: 0; }
+    .shopbymenu .mainmenu li {
+      display: inline-block;
+      width: 19%;
+      padding: 10px; }
+      .shopbymenu .mainmenu li a {
+        color: grey; }
+        .shopbymenu .mainmenu li a.active {
+          color: black;
+          font-weight: bold; }
+  .shopbymenu .shopbypanel {
+    border-top: solid 4px;
+    padding: 20px 0; }
+    .shopbymenu .shopbypanel h4 {
+      margin-bottom: 20px; }
+
+.breadcrumbs {
+  overflow: hidden;
+  padding: 15px 0; }
+  .breadcrumbs ul li {
+    list-style: none;
+    display: inline-block; }
+    .breadcrumbs ul li a {
+      display: block;
+      padding: 3px 6px; }
 
 .carousel {
   background: #acaea9; }
