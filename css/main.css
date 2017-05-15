@@ -1,440 +1,68 @@
-p {
-  margin: 10px 0;
-  font-size: 15px;
-  color: gray; }
-  p strong {
-    color: black; }
+/*
+Error: Invalid CSS after "}": expected "}", was ""
+        on line 56 of css/_heads.scss
+        from line 5 of css/main.scss
 
-#desktop-nav .top-bar {
-  padding: 10px 0;
-  overflow: hidden;
-  background: #b7b7b7;
-  z-index: 30000;
-  position: relative; }
-#desktop-nav .mainNav {
-  background: black;
-  z-index: 12000;
-  position: relative; }
-  #desktop-nav .mainNav .logo {
-    margin: 18px 0;
-    height: 44px; }
-  #desktop-nav .mainNav .search {
-    margin: 29px 0; }
-  #desktop-nav .mainNav ul {
-    padding-top: 18px; }
-    #desktop-nav .mainNav ul li {
-      list-style: none;
-      display: inline-block; }
-    #desktop-nav .mainNav ul a {
-      color: white;
-      display: inline-block;
-      padding: 10px 17px;
-      font-size: 18px;
-      text-transform: uppercase;
-      font-weight: bold; }
-      #desktop-nav .mainNav ul a:hover, #desktop-nav .mainNav ul a:focus {
-        text-decoration: none; }
-      #desktop-nav .mainNav ul a.selected {
-        position: relative; }
-        #desktop-nav .mainNav ul a.selected::after {
-          content: "";
-          display: block;
-          height: 7px;
-          background: #00aeef;
-          position: relative;
-          margin-top: 23px;
-          margin-bottom: -30px; }
-@keyframes slide {
-  from {
-    top: 0px; }
-  to {
-    top: 117px; } }
-#desktop-nav .dropdownMenu {
-  background: #ededed;
-  position: absolute;
-  top: 117px;
-  z-index: 1;
-  width: 100%;
-  display: none;
-  transition: all;
-  animation: slide .5s;
-  animation-fill-mode: forwards; }
-  #desktop-nav .dropdownMenu.show {
-    display: block;
-    top: 0px; }
-  #desktop-nav .dropdownMenu .menu-panel {
-    margin: 30px 0;
-    overflow: hidden; }
-  #desktop-nav .dropdownMenu .col-sm-2 {
-    min-height: 165px; }
-  #desktop-nav .dropdownMenu h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 5px 0 0 0; }
-  #desktop-nav .dropdownMenu ul {
-    font-size: 15px; }
-    #desktop-nav .dropdownMenu ul li {
-      list-style: none; }
-      #desktop-nav .dropdownMenu ul li a {
-        padding: 8px 0;
-        display: block; }
+51:     height: 36px;
+52:     line-height: 27px;
+53:     font-: 78px;
+54: 
+55: }
 
-.panel {
-  background: #ededed;
-  overflow: hidden; }
-
-.border-right {
-  border-right: solid 1px grey; }
-
-.shopbymenu {
-  padding: 10px; }
-  .shopbymenu .mainmenu {
-    list-style: none;
-    padding: 0; }
-    .shopbymenu .mainmenu li {
-      display: inline-block;
-      width: 19%;
-      padding: 10px; }
-      .shopbymenu .mainmenu li a {
-        color: grey; }
-        .shopbymenu .mainmenu li a.active {
-          color: black;
-          font-weight: bold; }
-        .shopbymenu .mainmenu li a:hover, .shopbymenu .mainmenu li a:focus {
-          text-decoration: none; }
-  .shopbymenu .shopbypanel {
-    border-top: solid 4px;
-    padding: 20px 0;
-    display: none; }
-    .shopbymenu .shopbypanel h4 {
-      margin-bottom: 20px; }
-
-.product-list {
-  opacity: 0.2; }
-
-.breadcrumbs {
-  overflow: hidden;
-  padding: 15px 0; }
-  .breadcrumbs span {
-    display: inline-block;
-    padding: 0 16px; }
-  .breadcrumbs ul li {
-    list-style: none;
-    display: inline-block; }
-    .breadcrumbs ul li a {
-      display: block;
-      padding: 3px 6px; }
-
-.carousel {
-  background: #acaea9; }
-
-.swiper-container {
-  width: 100%;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.swiper-slide {
-  background-size: cover;
-  background-position: center; }
-
-.gallery-top {
-  height: 80%;
-  width: 100%; }
-
-.gallery-thumbs {
-  height: 20%;
-  box-sizing: border-box;
-  padding: 10px 0; }
-
-.gallery-thumbs .swiper-slide {
-  height: 100%;
-  opacity: 0.4; }
-
-.gallery-thumbs .swiper-slide-active {
-  opacity: 1; }
-
-.gallery-thumbs img {
-  width: 200px; }
-
-.icon-new {
-  width: 26px;
-  margin: 0 10px;
-  vertical-align: middle; }
-
-.sale {
-  text-decoration: line-through; }
-
-.fix-bottom {
-  overflow: hidden;
-  height: 55px;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  background: #D5D5D5;
-  right: 0px;
-  z-index: 10000;
-  /* Move this to conditional comments */ }
-  .fix-bottom .btn-icon {
-    padding: 10px 6px;
-    border: solid 1px grey;
-    display: inline-block;
-    margin: 8px 5px;
-    vertical-align: middle;
-    height: 40px; }
-  .fix-bottom .btn-icon:before,
-  .fix-bottom .frame_before {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle; }
-  .fix-bottom img {
-    vertical-align: middle;
-    max-height: 25px;
-    max-width: 160px; }
-  .fix-bottom .frame {
-    list-style: none;
-    behavior: expression( function(t){ t.insertAdjacentHTML('afterBegin','<span class="frame_before"></span>'); t.runtimeStyle.behavior = 'none'; }(this) ); }
-  .fix-bottom .col-xs-6:first-child {
-    margin-right: solid 1px black; }
-  .fix-bottom .btn-block {
-    height: 55px;
-    font-size: 16px;
-    text-decoration: none;
-    padding-top: 15px; }
-
-.product-list .product-list-button {
-  overflow: hidden;
-  display: block;
-  margin-bottom: 12px; }
-  .product-list .product-list-button h4 {
-    font-size: 15px;
-    margin-bottom: 5px; }
-  .product-list .product-list-button p {
-    margin: 3px 0; }
-.product-list img {
-  width: 100%; }
-.product-list .price {
-  font-size: 12px;
-  margin-bottom: 15px; }
-
-.swiper-container {
-  width: 100%;
-  height: 100%; }
-
-.search-bar {
-  position: relative;
-  margin: 25px 0 20px 0; }
-  .search-bar .glyphicon {
-    position: absolute;
-    right: 8px;
-    top: 10px;
-    font-size: 16px; }
-
-.product-list-view img {
-  width: 100%; }
-.product-list-view .item {
-  margin-bottom: 20px;
-  border-bottom: solid 1px;
-  padding-bottom: 15px; }
-
-.grey-bg {
-  background: #b5b5b5; }
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  width: 80%;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center; }
-
-.swiper-slide:nth-child(2n) {
-  width: 60%; }
-
-.swiper-slide:nth-child(3n) {
-  width: 40%; }
-
-.navbar .logo {
-  width: auto;
-  height: 24px;
-  margin-top: 14px;
-  margin-left: 28px;
-  margin-right: 50px; }
-
-.carousel-control.left, .carousel-control.right {
-  background: none; }
-
-.message {
-  background: #c5c7c3; }
-  .message a {
-    color: black;
-    font-size: 9px;
-    margin-top: 0px;
-    padding: 8px;
-    display: inline-block;
-    margin-right: -24px; }
-
-.hero {
-  background: #E0DFDF; }
-
-.carousel-inner .item {
-  height: 200px;
-  background: #acaea9; }
-
-.jumbotron {
-  margin-bottom: 0; }
-  .jumbotron .btn-primary {
-    background: black;
-    color: #FCF5F5; }
-  .container .jumbotron {
-    border-radius: 0; }
-  .jumbotron.v2 {
-    background: #343030; }
-    .jumbotron.v2 h1, .jumbotron.v2 p, .jumbotron.v2 h2, .jumbotron.v2 h3 {
-      color: white; }
-    .jumbotron.v2 .btn-primary {
-      background: #FCF5F5;
-      color: black; }
-  .jumbotron.v3 {
-    background: #A8A3A3; }
-    .jumbotron.v3 h1, .jumbotron.v3 p, .jumbotron.v3 h3 {
-      color: white; }
-    .jumbotron.v3 .btn-primary {
-      background: #FCF5F5;
-      color: black; }
-
-.moreinfo {
-  font-size: 19px;
-  border-bottom: solid 1px;
-  padding: 12px;
-  display: block;
-  position: relative;
-  color: black;
-  margin-bottom: 4px;
-  text-decoration: none; }
-  .moreinfo:after {
-    position: absolute;
-    content: "+";
-    right: 10px;
-    font-size: 19px; }
-
-.footer {
-  background: #343030;
-  padding: 25px 0; }
-  .footer h1, .footer p, .footer h3, .footer h4 {
-    color: white;
-    padding: 10px 0;
-    font-size: 14px; }
-
-.product-tbn {
-  padding: 0 15px; }
-  .product-tbn img {
-    width: 31%;
-    float: left;
-    overflow: hidden;
-    margin: 10px 1%; }
-
-#mypanel {
-  background: white;
-  width: 100%;
-  z-index: 20000;
-  transform: translate3d(-640px, 0, 0);
-  transition: transform 0.35s;
-  position: fixed; }
-  #mypanel.active {
-    transform: translate3d(0, 0, 0);
-    box-shadow: 1px 3px 10px; }
-  #mypanel .btn-active {
-    position: relative; }
-    #mypanel .btn-active:after {
-      position: absolute;
-      content: ">";
-      right: 10px;
-      font-size: 19px; }
-  #mypanel .btn-simple {
-    position: relative;
-    display: block; }
-    #mypanel .btn-simple:after {
-      position: absolute;
-      content: "+";
-      right: 10px;
-      font-size: 19px; }
-  #mypanel .mp-menu {
-    position: relative;
-    margin-right: 10px; }
-    #mypanel .mp-menu .mp-simple ul li > a {
-      font-size: 12px;
-      padding: 13px 35px;
-      box-shadow: none; }
-    #mypanel .mp-menu .mp-simple {
-      display: none; }
-      #mypanel .mp-menu .mp-simple.active {
-        display: block;
-        overflow: visible;
-        height: auto; }
-  #mypanel .mp-level {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translate3d(-640px, 0, 0);
-    transition: transform 0.35s;
-    background: white; }
-    #mypanel .mp-level.active {
-      transform: translate3d(0, 0, 0);
-      z-index: 1000; }
-
-.page-wrapper {
-  max-width: 500px; }
-
-body, html {
-  max-width: 600px; }
-
-.carousel-caption p {
-  text-shadow: none;
-  color: white; }
-
-.white-bg {
-  background: white; }
-  .white-bg .carousel-inner .item {
-    height: 360px; }
-  .white-bg .carousel-control {
-    color: #696566;
-    text-shadow: none; }
-  .white-bg .item {
-    background: white; }
-    .white-bg .item img {
-      width: 100%; }
-    .white-bg .item h3, .white-bg .item p, .white-bg .item h1, .white-bg .item h2, .white-bg .item h4 {
-      color: black;
-      text-shadow: none; }
-
-@media (min-width: 768px) {
-  body, html {
-    max-width: inherit; }
-
-  #mypanel {
-    transform: translate3d(-1800px, 0, 0);
-    transition: transform 0.35s;
-    position: absolute; }
-
-  .page-wrapper {
-    max-width: inherit; }
-
-  .mp-level {
-    transform: translate3d(-1800px, 0, 0); } }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+css/_heads.scss:56
+css/main.scss:5
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:667:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/engine.rb:312:in `to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 56 of css/_heads.scss\A         from line 5 of css/main.scss\A \A 51:     height: 36px;\A 52:     line-height: 27px;\A 53:     font-: 78px;\A 54: \A 55: }"; }

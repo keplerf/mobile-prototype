@@ -7,6 +7,7 @@
     <title>Sole Mobile </title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/foundation-icons.css" />
 
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/component.css">
@@ -66,36 +67,36 @@
 
 <!-- navigation desktop -->
 
-  <div id="desktop-nav">
+  <div id="desktop-nav" class="hidden-xs">
     <div class="top-bar">
       <div class="container-fluid">
-        <div class="col-md-6">
-          Free shipping over $99 Learn more
+        <div class="col-sm-6">
+          <!-- Free shipping over $99 Learn more -->
         </div>
-        <div class="col-md-6 text-right topNav">
+        <div class="col-sm-6 text-right topNav">
           <a href="#">My account </a>
           <a href="#">Help</a>
           <a href="#"> <img class="icon-new" src="images/icons/cart-icon.svg" alt=""> </a>
           <a href="#">En ></a>
-          <a href="#"> <img class="icon-new" src="images/icons/canada-icon.svg" alt=""> </a>
+          <a href="#"> <img class="icon-new" src="images/icons/canada-icon.svg" alt=""> > </a>
         </div>
       </div>
     </div>
     <div class="mainNav">
       <div class="container-fluid">
-        <div class="col-md-3">
+        <div class="col-sm-3 col-md-2">
            <a href="index.php"><img src="images/sole-white.svg" class="logo" alt="" /></a>
         </div>
-        <div class="col-md-7 text-center">
+        <div class="col-sm-8 col-md-8 text-center ">
           <ul>
-            <li><a href="i#" data-menu= '1'>Store</a></li>
-            <li><a href="i#">Reviews</a></li>
-            <li><a href="i#">Health</a></li>
-            <li><a href="i#">Why Sole</a></li>
+            <li><a href="i#" data-menu= 'store'>Store</a></li>
+            <li><a href="i#" data-menu= 'reviews'>Reviews</a></li>
+            <li><a href="i#" data-menu= 'health'>Health</a></li>
+            <li><a href="i#" data-menu= 'why'>Why Sole</a></li>
           </ul>
         </div>
 
-        <div class="col-md-2 text-right ">
+        <div class="col-sm-1 col-md-2 text-right ">
           <div class="search">
             <img class="icon-new" src="images/icons/search-white-icon.svg" alt="">
           </div>
@@ -104,7 +105,7 @@
     </div>
     <div class="dropdownMenu">
       <div class="container">
-        <div class="menu1 menu-panel">
+        <div class="menu1 menu-panel store-menu">
           <div class="col-sm-1">
           </div>
           <div class="col-sm-2 border-right">
@@ -127,6 +128,7 @@
             <ul>
               <li><h3><a href="#">FOOTWEAR</a></h3></li>
               <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
               <li><a href="shopby.php">Shop by</a></li>
               <li><a href="#">Shop all</a></li>
             </ul>
@@ -142,6 +144,86 @@
             <h3><img src="http://placehold.it/150x150"></h3>
           </div>
         </div>
+
+        <div class="menu1 menu-panel reviews-menu">
+          <div class="col-sm-3">
+          </div>
+          <div class="col-sm-2 border-right">
+            <ul>
+              <li><h3><a href="#">PRODUCTS</a></h3></li>
+              <li><a href="#">Footwear</a></li>
+              <li><a href="shopby.php">Footbeds</a></li>
+              <li><a href="#">Socks</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 border-right">
+            <ul>
+              <li><h3><a href="#">HEALTH</a></h3></li>
+              <li><h3><a href="#">CUSTOMER SERVICE</a></h3></li>
+              <li><h3><a href="#">PRESS</a></h3></li>
+              <li><h3><a href="#">ADD REVIEW</a></h3></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="menu1 menu-panel health-menu">
+          <div class="col-sm-3">
+          </div>
+          <div class="col-sm-2 border-right">
+            <ul>
+              <li><h3><a href="#">INJURIES</a></h3></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="shopby.php">Women</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 border-right">
+            <ul>
+              <li><h3><a href="#">TREATMENT</a></h3></li>
+              <li><h3><a href="#">PREVENTION</a></h3></li>
+              <li><h3><a href="#">RESEARCH</a></h3></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu1 menu-panel why-menu">
+          <div class="col-sm-1">
+          </div>
+          <div class="col-sm-3 border-right">
+            <ul>
+              <li><h3><a href="#">OUR STORY</a></h3></li>
+              <li><h3><a href="#">OUR PROMISE</a></h3></li>
+              <li><h3><a href="#">WHY ORTHOTICS</a></h3></li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <ul>
+              <li><h3><a href="#">SOLE SCIENCE</a></h3></li>
+              <li><a href="#">SOLE signature shape</a></li>
+              <li><a href="shopby.php">ReCORK technology</a></li>
+              <li><a href="#">Performance</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <ul>
+              <li><h3><a href="#">RECORK</a></h3></li>
+              <li><a href="#">Pioneering change</a></li>
+              <li><a href="#">ReCORK process</a></li>
+              <li><a href="shopby.php">Our impact</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <ul>
+              <li><h3><a href="#">SOLE SUPPORTS</a></h3></li>
+              <li><a href="#">Charities</a></li>
+              <li><a href="#">Ambassadors</a></li>
+              <li><a href="#">Enviromental</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+
       </div>
     </div>
   </div>

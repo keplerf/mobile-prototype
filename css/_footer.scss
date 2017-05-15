@@ -1,0 +1,47 @@
+#footer{
+  background: black;
+  color: white;
+  padding: 40px 0;
+  p{
+    color: white;
+  }
+  .small{
+    font-size: 11px;
+    line-height: 20px;
+  }
+
+  ul, li{
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+  }
+  ul{
+    margin-top: 10px;
+    margin-left: 100px;
+  }
+
+  .social{
+    i{
+      font-size: 29px;
+      padding: 5px;
+      color: grey;
+    }
+  }
+
+  input[type="text"]{
+    width: 100%;
+    color: grey;
+    line-height: 31px;
+  }
+
+  .btn-default{
+    background: black;
+    border: 2px solid white;
+    border-radius: 0;
+    color: white;
+  }
+
+  h5{
+    font-size: 14px;
+  }
+}

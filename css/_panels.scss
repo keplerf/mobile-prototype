@@ -1,0 +1,105 @@
+
+@import 'partials/mixins';
+@import 'partials/color';
+.panels{
+
+  .panel{
+    display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 0px;
+     text-align: center;
+     height: 560px;
+     margin-bottom: 0;
+
+     transition-property: all;
+     transition-duration: 0.7s;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: auto 100% ;
+
+     &:hover{
+        background-size: auto 105% ;
+        opacity: .5;
+
+     }
+
+     .btn-primary{
+       background: black;
+       text-transform: capitalize;
+       border: none;
+       border-radius: 0px;
+
+     }
+
+     &.v2{
+       background: rgb(218, 223, 222);
+     }
+     &.v3{
+       background: rgb(65, 65, 65);
+     }
+
+     &.simple{
+       position: relative;
+
+       .btn-primary{
+         bottom: 70px;
+         position: absolute;
+       }
+     }
+
+     h3{
+
+     }
+  }
+}
+
+// .programs {
+//     width: 98%;
+//     margin: 0 auto;
+//     padding-left: .5%;
+//     padding-top:140px;
+//
+//     &__item{
+//         position: relative;
+//         overflow: hidden;
+//         width: 100%;
+//         height: 300px;
+//         // @include transition-property(all);
+//         // @include transition-duration(.5s);
+//         transition-property: all;
+//         transition-duration: 0.3s;
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         background-size: auto 100% ;
+//
+//         figure{
+//             display: table;
+//             height: 100%;
+//
+//
+//             &:hover .overlay{
+//                 opacity: 1;
+//
+//
+//             } // &:hover .overlay
+//           }
+//       }
+
+  // }
+
+.insta-panel{
+  padding: 40px 0;
+  background: white;
+  overflow: hidden;
+  img{
+    float: left;
+    margin:0 20px;
+    width: 22%;
+    height: auto;
+  }
+}

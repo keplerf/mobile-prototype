@@ -22,8 +22,13 @@ $( document ).ready(function() {
 // Desktop Main nav
 $('.mainNav a').on('click',function(evt){
   evt.preventDefault(evt);
+  var link = $(this).data('menu');
+  $('.dropdownMenu .menu-panel').removeClass('show')
+  $('#desktop-nav .mainNav ul a').removeClass('selected')
   $(this).toggleClass('selected');
-  $('.dropdownMenu').toggleClass('show');
+
+  $('.'+link+'-menu').toggleClass('show');
+
 });
 
 $('.shopbymenu .mainmenu a').on('click',function(evt){
